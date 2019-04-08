@@ -162,12 +162,13 @@
       (setq mode (car mode)))
     (with-current-buffer buffer (if mode (funcall mode)))))
 
-;; highlight the current line
-(global-hl-line-mode +1)
-
 (require 'volatile-highlights)
 (volatile-highlights-mode t)
 (diminish 'volatile-highlights-mode)
+
+;; highlights things under cursor
+(require 'highlight-thing)
+(global-highlight-thing-mode)
 
 ;; note - this should be after volatile-highlights is required
 ;; add the ability to cut the current line, without marking it
@@ -363,7 +364,7 @@ indent yanked text (with prefix arg don't indent)."
 (prelude-mode t)
 
 ;; sensible undo
-(global-undo-tree-mode)
+(global-undo-tree-mode 0)
 (diminish 'undo-tree-mode)
 
 ;; enable winner-mode to manage window configurations

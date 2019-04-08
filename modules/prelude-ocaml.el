@@ -1,4 +1,4 @@
-;;; prelude-ocaml.el --- Emacs Prelude: decent Perl coding settings.
+sg;;; prelude-ocaml.el --- Emacs Prelude: decent Perl coding settings.
 ;;
 ;; Copyright © 2014-2018 Geoff Shannon
 ;;

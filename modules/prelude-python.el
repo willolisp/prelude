@@ -106,6 +106,10 @@
 (add-hook 'python-mode-hook (lambda ()
                               (run-hooks 'prelude-python-mode-hook)))
 
+;; yapf
+(require 'py-yapf)
+(add-hook 'python-mode-hook 'py-yapf-enable-on-save)
+
 (provide 'prelude-python)
 
 ;;; prelude-python.el ends here
