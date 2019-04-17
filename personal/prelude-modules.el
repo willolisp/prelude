@@ -21,6 +21,7 @@
 ;; (require 'prelude-elixir)
 ;; (require 'prelude-go)
 ;; (require 'prelude-haskell)
+(require 'prelude-kotlin)
 (require 'prelude-js)
 ;; (require 'prelude-latex)
 (require 'prelude-lisp)
@@ -39,3 +40,5 @@
 ;; (require 'prelude-web) ;; Emacs mode for web templates
 (require 'prelude-xml)
 ;; (require 'prelude-yaml)
+(require 'prelude-restclient)
+(require 'prelude-fun)

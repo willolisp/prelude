@@ -42,6 +42,7 @@
 
   (setq prelude-clojure-mode-hook 'prelude-clojure-mode-defaults)
 
+  (add-hook 'clojure-mode-hook 'hs-minor-mode)
   (add-hook 'clojure-mode-hook (lambda ()
                                  (run-hooks 'prelude-clojure-mode-hook))))
 

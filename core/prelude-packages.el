@@ -78,6 +78,7 @@
     magit
     move-text
     operate-on-number
+    restclient
     smartparens
     smartrep
     super-save

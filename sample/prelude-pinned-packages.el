@@ -100,6 +100,7 @@
         (puppet-mode . "melpa-stable")
         (pythonic . "melpa-stable")
         (queue . "gnu")
+        (restclient . "melpa-stable")
         (rich-minority . "melpa-stable")
         (ruby-tools . "melpa-stable")
         (s . "melpa-stable")
