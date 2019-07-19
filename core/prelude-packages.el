@@ -87,7 +87,11 @@
     which-key
     zenburn-theme
     zop-to-char
-    highlight-thing)
+    ;; custom
+    highlight-thing
+    prettier-js
+    parrot
+    nyan-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
