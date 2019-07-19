@@ -33,6 +33,7 @@
 ;;; Code:
 
 (require 'prelude-lisp)
+(require 'key-chord)
 (prelude-require-packages '(clojure-mode cider))
 
 (with-eval-after-load 'clojure-mode
@@ -44,7 +45,9 @@
 
   (add-hook 'clojure-mode-hook 'hs-minor-mode)
   (add-hook 'clojure-mode-hook (lambda ()
-                                 (run-hooks 'prelude-clojure-mode-hook))))
+                                 (run-hooks 'prelude-clojure-mode-hook)))
+  (add-hook 'clojure-mode-hook
+            (lambda () (key-chord-define clojure-mode-map "hh" 'hs-toggle-hiding))))
 
 (with-eval-after-load 'cider
   (setq nrepl-log-messages t)
@@ -59,6 +62,8 @@
 
   (add-hook 'cider-repl-mode-hook (lambda ()
                                     (run-hooks 'prelude-cider-repl-mode-hook))))
+
+(key-chord-mode +1)
 
 (provide 'prelude-clojure)
 

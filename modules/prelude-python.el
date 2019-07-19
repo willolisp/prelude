@@ -107,8 +107,8 @@
                               (run-hooks 'prelude-python-mode-hook)))
 
 ;; yapf
-(require 'py-yapf)
-(add-hook 'python-mode-hook 'py-yapf-enable-on-save)
+;; (require 'py-yapf)
+;; (add-hook 'python-mode-hook 'py-yapf-enable-on-save)
 
 (provide 'prelude-python)
 
