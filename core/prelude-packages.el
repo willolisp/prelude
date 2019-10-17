@@ -91,7 +91,8 @@
     highlight-thing
     prettier-js
     parrot
-    nyan-mode)
+    nyan-mode
+    flycheck-clj-kondo)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()

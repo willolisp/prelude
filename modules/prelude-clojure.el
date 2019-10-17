@@ -34,7 +34,11 @@
 
 (require 'prelude-lisp)
 (require 'key-chord)
+(require 'flycheck-clj-kondo)
 (prelude-require-packages '(clojure-mode cider))
+
+(dolist (checker '(clj-kondo-clj clj-kondo-cljs clj-kondo-cljc clj-kondo-edn))
+  (setq flycheck-checkers (cons checker (delq checker flycheck-checkers))))
 
 (with-eval-after-load 'clojure-mode
   (defun prelude-clojure-mode-defaults ()
